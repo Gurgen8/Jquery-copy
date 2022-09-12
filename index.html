@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Simple <br />Copy to Clipboard</h1>
+
+    <!-- You just need to get this field. -->
+    <script
+      src="https://kit.fontawesome.com/d97b87339f.js"
+      crossorigin="anonymous"
+    ></script>
+    <div class="clipboard">
+      <input
+        onclick="copy()"
+        class="copy-input"
+        value="https://www.bugra.work"
+        id="copyClipboard"
+        readonly
+      />
+      <button class="copy-btn" id="copyButton" onclick="copy()">
+        <i class="far fa-copy"></i>
+      </button>
+    </div>
+    <div id="copied-success" class="copied">
+      <span>Copied!</span>
+    </div>
+
+    <div class="footer">
+      <p>
+        design by
+        <a rel="dofollow" target="_blank" href="https://bugra.work"
+          >bugra.work</a
+        >
+      </p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
